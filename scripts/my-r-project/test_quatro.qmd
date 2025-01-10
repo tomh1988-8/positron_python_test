@@ -1,0 +1,26 @@
+---
+title: "test_quatro"
+author: "Tom"
+format: html
+execute:
+  echo: true
+  warning: false
+---
+
+```{r}
+
+# A short script to print "Hello, World!" and perform a simple calculation
+print("Hello, World!")
+
+# Calculate the sum of first 10 natural numbers
+sum_of_numbers <- sum(1:10)
+print(paste("The sum of the first 10 natural numbers is", sum_of_numbers))
+
+# Plot the sum of first 10 natural numbers
+library(ggplot2)
+df <- data.frame(numbers = 1:10, sum = cumsum(1:10))
+ggplot(data = df, aes(x = numbers, y = sum)) +
+  geom_point() +
+  geom_line()
+
+``` 
