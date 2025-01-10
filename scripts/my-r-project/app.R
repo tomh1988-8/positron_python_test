@@ -18,12 +18,12 @@ ui <- fluidPage(
 # Server
 server <- function(input, output) {
   output$distPlot <- renderPlot({
-    x    <- faithful[, 2]  # Old Faithful Geyser data
+    x <- faithful[, 2] # Old Faithful Geyser data
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     hist(x, breaks = bins, col = "#75AADB", border = "white")
   })
 }
 
 # Run the application
-shinyApp(ui = ui, server = server)
 
+shinyApp(ui = ui, server = server)

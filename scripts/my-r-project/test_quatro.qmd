@@ -28,6 +28,14 @@ ggplot(data = df, aes(x = numbers, y = sum)) +
 
 ```{r}
 # Your R code here
+df <- data.frame(x = 1:10, y = 3 * 1:10)
+library(ggplot2)
+
+
+
+ggplot(data = df, aes(x = x, y = y)) +
+  geom_point() +
+  geom_smooth(method = lm)
 ```
 
 ```{r}
