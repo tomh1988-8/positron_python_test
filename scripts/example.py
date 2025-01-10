@@ -21,3 +21,8 @@ plt.xlabel("Name")
 plt.ylabel("Age")
 plt.title("Ages of People")
 plt.show()
+
+# * Actual comment
+# ! Actual comment
+# ? Actual comment
+# TODO: Actual comment
