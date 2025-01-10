@@ -25,5 +25,9 @@ server <- function(input, output) {
 }
 
 # Run the application
+# * comment
+# ! comment
+# ? comment
+# TODO: comment
 
 shinyApp(ui = ui, server = server)
